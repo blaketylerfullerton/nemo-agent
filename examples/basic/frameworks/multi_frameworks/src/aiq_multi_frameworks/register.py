@@ -25,7 +25,7 @@ from aiq.data_models.function import FunctionBaseConfig
 from . import haystack_agent  # noqa: F401, pylint: disable=unused-import
 from . import langchain_research_tool  # noqa: F401, pylint: disable=unused-import
 from . import llama_index_rag_tool  # noqa: F401, pylint: disable=unused-import
-
+from . import job_application_agent  # noqa: F401, pylint: disable=unused-import
 logger = logging.getLogger(__name__)
 
 
@@ -33,9 +33,10 @@ class MultiFrameworksWorkflowConfig(FunctionBaseConfig, name="multi_frameworks")
     # Add your custom configuration parameters here
     llm: LLMRef = "nim_llm"
     data_dir: str = "/home/coder/dev/ai-query-engine/examples/basic/frameworks/multi_frameworks/data/"
-    research_tool: FunctionRef
+    research_tool: FunctionRef | None = None
     rag_tool: FunctionRef
     chitchat_agent: FunctionRef
+    job_application_agent: FunctionRef
 
 
 @register_function(config_type=MultiFrameworksWorkflowConfig, framework_wrappers=[LLMFrameworkEnum.LANGCHAIN])
@@ -57,18 +58,20 @@ async def multi_frameworks_workflow(config: MultiFrameworksWorkflowConfig, build
     logger.info("workflow config = %s", config)
 
     llm = await builder.get_llm(llm_name=config.llm, wrapper_type=LLMFrameworkEnum.LANGCHAIN)
-    research_tool = builder.get_tool(fn_name=config.research_tool, wrapper_type=LLMFrameworkEnum.LANGCHAIN)
+    research_tool = None
+    if config.research_tool:
+        research_tool = builder.get_tool(fn_name=config.research_tool, wrapper_type=LLMFrameworkEnum.LANGCHAIN)
     rag_tool = builder.get_tool(fn_name=config.rag_tool, wrapper_type=LLMFrameworkEnum.LANGCHAIN)
     chitchat_agent = builder.get_tool(fn_name=config.chitchat_agent, wrapper_type=LLMFrameworkEnum.LANGCHAIN)
-
+    job_application_agent = builder.get_tool(fn_name=config.job_application_agent, wrapper_type=LLMFrameworkEnum.LANGCHAIN)
     chat_hist = ChatMessageHistory()
 
     router_prompt = """
-    Given the user input below, classify it as either being about 'Research', 'Retrieve' or 'General' topic.
+    Given the user input below, classify it as either being about 'Retrieve' or 'General' topic.
     Just use one of these words as your response. \
-    'Research' - any question related to a need to do research on arxiv papers and get a summary. such as "find research papers about RAG for me" or " what is Compound AI?"...etc
     'Retrieve' - any question related to the topic of AIQ Toolkit or its workflows, especially concerning the particular workflow called multi_frameworks which show case using multiple frameworks such as langchain, llama-index ..etc
     'General' - answering small greeting or chitchat type of questions or everything else that does not fall into any of the above topics.
+    'Job' - any question related to job application.
     User query: {input}
     Classifcation topic:"""  # noqa: E501
 
@@ -86,13 +89,11 @@ async def multi_frameworks_workflow(config: MultiFrameworksWorkflowConfig, build
     )
 
     class AgentState(TypedDict):
-        """"
-            Will hold the agent state in between messages
-        """
         input: str
         chat_history: list[BaseMessage] | None
-        chosen_worker_agent: str | None
         final_output: str | None
+        current_result: str | None
+
 
     async def supervisor(state: AgentState):
         query = state["input"]
@@ -137,8 +138,13 @@ async def multi_frameworks_workflow(config: MultiFrameworksWorkflowConfig, build
             output = (await chitchat_agent.ainvoke(query))
             logger.info("**using general chitchat chain >>> output:  \n %s, %s", output, Fore.RESET)
         elif 'research' in worker_choice.lower():
-            inputs = {"inputs": query}
-            output = (await research_tool.ainvoke(inputs))
+            if research_tool:
+                inputs = {"inputs": query}
+                output = (await research_tool.ainvoke(inputs))
+            else:
+                output = "Research functionality is currently disabled. Please try asking about the workflow or general questions instead."
+        elif 'job' in worker_choice.lower():
+            output = (await job_application_agent.ainvoke(query))
         else:
             output = ("Apologies, I am not sure what to say, I can answer general questions retrieve info this "
                       "multi_frameworks workflow and answer light coding questions, but nothing more.")

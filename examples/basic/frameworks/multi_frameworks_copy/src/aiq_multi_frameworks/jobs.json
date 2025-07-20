@@ -1,0 +1,366 @@
+[
+  {
+    "name": "Sarah Chen",
+    "company": "QuantumFlow AI",
+    "email": "sarah@quantumflow.ai",
+    "website": "https://quantumflow.ai",
+    "job_description": "CEO & Co-founder of QuantumFlow AI - Building quantum-inspired optimization algorithms for supply chain management"
+  },
+  {
+    "name": "Marcus Rodriguez",
+    "company": "GreenCode",
+    "email": "marcus@greencode.io",
+    "website": "https://greencode.io",
+    "job_description": "Founder of GreenCode - Developing carbon-neutral cloud computing solutions for enterprises"
+  },
+  {
+    "name": "Priya Patel",
+    "company": "NeuralNav",
+    "email": "priya@neuralnav.com",
+    "website": "https://neuralnav.com",
+    "job_description": "Co-founder & CTO of NeuralNav - Creating AI-powered navigation systems for autonomous vehicles"
+  },
+  {
+    "name": "David Kim",
+    "company": "MedAssist",
+    "email": "david@medassist.health",
+    "website": "https://medassist.health",
+    "job_description": "CEO of MedAssist - Building telemedicine platforms for rural healthcare access"
+  },
+  {
+    "name": "Elena Volkov",
+    "company": "CryptoVault",
+    "email": "elena@cryptovault.secure",
+    "website": "https://cryptovault.secure",
+    "job_description": "Founder of CryptoVault - Developing enterprise-grade blockchain security solutions"
+  },
+  {
+    "name": "Ahmed Hassan",
+    "company": "SolarPlex",
+    "email": "ahmed@solarplex.energy",
+    "website": "https://solarplex.energy",
+    "job_description": "Co-founder of SolarPlex - Creating modular solar energy systems for urban environments"
+  },
+  {
+    "name": "Jessica Thompson",
+    "company": "EduStream",
+    "email": "jessica@edustream.platform",
+    "website": "https://edustream.platform",
+    "job_description": "CEO & Founder of EduStream - Building personalized learning platforms powered by AI"
+  },
+  {
+    "name": "Ryan O'Connor",
+    "company": "FarmTech Solutions",
+    "email": "ryan@farmtech.agriculture",
+    "website": "https://farmtech.agriculture",
+    "job_description": "Founder of FarmTech Solutions - Developing IoT sensors for precision agriculture"
+  },
+  {
+    "name": "Aisha Nakamura",
+    "company": "FinFlow",
+    "email": "aisha@finflow.payments",
+    "website": "https://finflow.payments",
+    "job_description": "Co-founder & CPO of FinFlow - Creating seamless cross-border payment solutions for SMEs"
+  },
+  {
+    "name": "Lucas Silva",
+    "company": "RobotCare",
+    "email": "lucas@robotcare.health",
+    "website": "https://robotcare.health",
+    "job_description": "CEO of RobotCare - Building assistive robotics for elderly care facilities"
+  },
+  {
+    "name": "Zoe Martinez",
+    "company": "ClimateData Analytics",
+    "email": "zoe@climatedata.analytics",
+    "website": "https://climatedata.analytics",
+    "job_description": "Founder of ClimateData Analytics - Providing climate risk assessment tools for insurance companies"
+  },
+  {
+    "name": "Nathan Park",
+    "company": "VirtualOffice",
+    "email": "nathan@virtualoffice.space",
+    "website": "https://virtualoffice.space",
+    "job_description": "Co-founder of VirtualOffice - Creating immersive VR workspaces for remote teams"
+  },
+  {
+    "name": "Fatima Al-Rashid",
+    "company": "BioSynth Materials",
+    "email": "fatima@biosynth.materials",
+    "website": "https://biosynth.materials",
+    "job_description": "CEO & Co-founder of BioSynth Materials - Developing biodegradable packaging from algae"
+  },
+  {
+    "name": "Jack Morrison",
+    "company": "AIWriter",
+    "email": "jack@aiwriter.content",
+    "website": "https://aiwriter.content",
+    "job_description": "Founder of AIWriter - Building AI-powered content generation tools for marketing teams"
+  },
+  {
+    "name": "Meera Gupta",
+    "company": "QuantumNet",
+    "email": "meera@quantumnet.security",
+    "website": "https://quantumnet.security",
+    "job_description": "CTO & Co-founder of QuantumNet - Developing quantum-resistant cybersecurity protocols"
+  },
+  {
+    "name": "Carlos Mendez",
+    "company": "FoodChain Logistics",
+    "email": "carlos@foodchain.logistics",
+    "website": "https://foodchain.logistics",
+    "job_description": "CEO of FoodChain Logistics - Optimizing cold chain delivery for fresh produce"
+  },
+  {
+    "name": "Sophie Andersson",
+    "company": "MentalHealth.ai",
+    "email": "sophie@mentalhealth.ai",
+    "website": "https://mentalhealth.ai",
+    "job_description": "Founder of MentalHealth.ai - Creating AI-powered mental health screening tools"
+  },
+  {
+    "name": "Omar Farouk",
+    "company": "WaterTech Solutions",
+    "email": "omar@watertech.solutions",
+    "website": "https://watertech.solutions",
+    "job_description": "Co-founder of WaterTech Solutions - Developing water purification systems for developing countries"
+  },
+  {
+    "name": "Isabella Rossi",
+    "company": "FashionTech",
+    "email": "isabella@fashiontech.sustainable",
+    "website": "https://fashiontech.sustainable",
+    "job_description": "CEO of FashionTech - Building sustainable fashion marketplace with blockchain authenticity"
+  },
+  {
+    "name": "Kevin Chang",
+    "company": "Space Logistics",
+    "email": "kevin@spacelogistics.orbital",
+    "website": "https://spacelogistics.orbital",
+    "job_description": "Founder of Space Logistics - Developing satellite-based cargo delivery systems"
+  },
+  {
+    "name": "Amara Johnson",
+    "company": "NeuroFeedback Therapy",
+    "email": "amara@neurofeedback.therapy",
+    "website": "https://neurofeedback.therapy",
+    "job_description": "Co-founder & CEO of NeuroFeedback Therapy - Creating brain-computer interfaces for rehabilitation"
+  },
+  {
+    "name": "Viktor Petrov",
+    "company": "GameAI Studio",
+    "email": "viktor@gameai.studio",
+    "website": "https://gameai.studio",
+    "job_description": "Founder of GameAI Studio - Building AI-powered game development tools"
+  },
+  {
+    "name": "Lily Wang",
+    "company": "CarbonTrack",
+    "email": "lily@carbontrack.climate",
+    "website": "https://carbontrack.climate",
+    "job_description": "CEO of CarbonTrack - Developing carbon footprint tracking solutions for corporations"
+  },
+  {
+    "name": "Gabriel Santos",
+    "company": "MusicTech",
+    "email": "gabriel@musictech.streaming",
+    "website": "https://musictech.streaming",
+    "job_description": "Co-founder of MusicTech - Creating AI-powered music recommendation and discovery platform"
+  },
+  {
+    "name": "Nora Eriksson",
+    "company": "HealthWearable",
+    "email": "nora@healthwearable.devices",
+    "website": "https://healthwearable.devices",
+    "job_description": "Founder of HealthWearable - Developing continuous health monitoring devices"
+  },
+  {
+    "name": "Rajesh Sharma",
+    "company": "SmartCity Infrastructure",
+    "email": "rajesh@smartcity.infrastructure",
+    "website": "https://smartcity.infrastructure",
+    "job_description": "CEO & Co-founder of SmartCity Infrastructure - Building IoT solutions for urban planning"
+  },
+  {
+    "name": "Emma Clarke",
+    "company": "PetTech Companions",
+    "email": "emma@pettech.companions",
+    "website": "https://pettech.companions",
+    "job_description": "Founder of PetTech Companions - Creating AI-powered pet care and monitoring systems"
+  },
+  {
+    "name": "Diego Fernandez",
+    "company": "EnergyStorage Grid",
+    "email": "diego@energystorage.grid",
+    "website": "https://energystorage.grid",
+    "job_description": "CTO of EnergyStorage Grid - Developing next-generation battery storage for renewable energy"
+  },
+  {
+    "name": "Hannah Lee",
+    "company": "LegalTech Automation",
+    "email": "hannah@legaltech.automation",
+    "website": "https://legaltech.automation",
+    "job_description": "Co-founder of LegalTech Automation - Building AI-powered contract analysis tools"
+  },
+  {
+    "name": "Aleksandr Kozlov",
+    "company": "CyberDefense AI",
+    "email": "aleksandr@cyberdefense.ai",
+    "website": "https://cyberdefense.ai",
+    "job_description": "Founder & CEO of CyberDefense AI - Creating autonomous threat detection systems"
+  },
+  {
+    "name": "Chloe Martin",
+    "company": "RetailAnalytics",
+    "email": "chloe@retailanalytics.insights",
+    "website": "https://retailanalytics.insights",
+    "job_description": "Co-founder of RetailAnalytics - Developing predictive analytics for retail inventory management"
+  },
+  {
+    "name": "Yuki Tanaka",
+    "company": "QuantumComputing Cloud",
+    "email": "yuki@quantumcomputing.cloud",
+    "website": "https://quantumcomputing.cloud",
+    "job_description": "CEO of QuantumComputing Cloud - Providing quantum computing as a service platform"
+  },
+  {
+    "name": "Theo van der Berg",
+    "company": "TransportAI",
+    "email": "theo@transportai.logistics",
+    "website": "https://transportai.logistics",
+    "job_description": "Founder of TransportAI - Optimizing freight transportation with machine learning"
+  },
+  {
+    "name": "Aria Cohen",
+    "company": "BioMarker Diagnostics",
+    "email": "aria@biomarker.diagnostics",
+    "website": "https://biomarker.diagnostics",
+    "job_description": "Co-founder & CTO of BioMarker Diagnostics - Developing early disease detection through AI"
+  },
+  {
+    "name": "Mateo Rodriguez",
+    "company": "ConstructionTech",
+    "email": "mateo@constructiontech.build",
+    "website": "https://constructiontech.build",
+    "job_description": "CEO of ConstructionTech - Creating automated construction project management systems"
+  },
+  {
+    "name": "Ruby Mitchell",
+    "company": "SocialMedia Analytics",
+    "email": "ruby@socialmedia.analytics",
+    "website": "https://socialmedia.analytics",
+    "job_description": "Founder of SocialMedia Analytics - Building sentiment analysis tools for brand monitoring"
+  },
+  {
+    "name": "Hassan Al-Mahmoud",
+    "company": "DroneDelivery Logistics",
+    "email": "hassan@dronedelivery.logistics",
+    "website": "https://dronedelivery.logistics",
+    "job_description": "Co-founder of DroneDelivery Logistics - Developing autonomous drone delivery networks"
+  },
+  {
+    "name": "Scarlett Wilson",
+    "company": "BeautyTech",
+    "email": "scarlett@beautytech.personalized",
+    "website": "https://beautytech.personalized",
+    "job_description": "CEO & Founder of BeautyTech - Creating AI-powered personalized skincare solutions"
+  },
+  {
+    "name": "Dmitri Volkov",
+    "company": "CryptoExchange DeFi",
+    "email": "dmitri@cryptoexchange.defi",
+    "website": "https://cryptoexchange.defi",
+    "job_description": "Founder of CryptoExchange DeFi - Building decentralized finance trading platforms"
+  },
+  {
+    "name": "Maya Patel",
+    "company": "LanguageLearning AI",
+    "email": "maya@languagelearning.ai",
+    "website": "https://languagelearning.ai",
+    "job_description": "Co-founder of LanguageLearning AI - Developing immersive language learning experiences"
+  },
+  {
+    "name": "Felix Müller",
+    "company": "AutomotiveAI Systems",
+    "email": "felix@automotiveai.systems",
+    "website": "https://automotiveai.systems",
+    "job_description": "CTO of AutomotiveAI Systems - Creating predictive maintenance solutions for vehicles"
+  },
+  {
+    "name": "Jasmine Taylor",
+    "company": "InsuranceTech Claims",
+    "email": "jasmine@insurancetech.claims",
+    "website": "https://insurancetech.claims",
+    "job_description": "Founder & CEO of InsuranceTech Claims - Automating insurance claim processing with AI"
+  },
+  {
+    "name": "Antonio Morales",
+    "company": "AgriTech Precision",
+    "email": "antonio@agritech.precision",
+    "website": "https://agritech.precision",
+    "job_description": "Co-founder of AgriTech Precision - Developing drone-based crop monitoring systems"
+  },
+  {
+    "name": "Ingrid Larsson",
+    "company": "CleanTech Ocean",
+    "email": "ingrid@cleantech.ocean",
+    "website": "https://cleantech.ocean",
+    "job_description": "CEO of CleanTech Ocean - Building ocean plastic cleanup automation systems"
+  },
+  {
+    "name": "Kai Chen",
+    "company": "FinanceAI Trading",
+    "email": "kai@financeai.trading",
+    "website": "https://financeai.trading",
+    "job_description": "Founder of FinanceAI Trading - Creating algorithmic trading platforms for retail investors"
+  },
+  {
+    "name": "Olivia Brooks",
+    "company": "TravelTech Planning",
+    "email": "olivia@traveltech.planning",
+    "website": "https://traveltech.planning",
+    "job_description": "Co-founder of TravelTech Planning - Building AI-powered travel itinerary optimization"
+  },
+  {
+    "name": "Ravi Krishnan",
+    "company": "MedicalAI Imaging",
+    "email": "ravi@medicalai.imaging",
+    "website": "https://medicalai.imaging",
+    "job_description": "CEO & Co-founder of MedicalAI Imaging - Developing AI-powered medical image analysis"
+  },
+  {
+    "name": "Zara Ahmed",
+    "company": "SmartGrid Energy",
+    "email": "zara@smartgrid.energy",
+    "website": "https://smartgrid.energy",
+    "job_description": "Founder of SmartGrid Energy - Creating intelligent energy distribution systems"
+  },
+  {
+    "name": "Liam O'Brien",
+    "company": "SportTech Analytics",
+    "email": "liam@sporttech.analytics",
+    "website": "https://sporttech.analytics",
+    "job_description": "Co-founder of SportTech Analytics - Building performance analytics for professional sports"
+  },
+  {
+    "name": "Valentina Rossi",
+    "company": "FoodTech Nutrition",
+    "email": "valentina@foodtech.nutrition",
+    "website": "https://foodtech.nutrition",
+    "job_description": "CEO of FoodTech Nutrition - Developing personalized nutrition planning with AI"
+  },
+  {
+    "name": "Chen Wei",
+    "company": "ManufacturingAI",
+    "email": "chen@manufacturingai.automation",
+    "website": "https://manufacturingai.automation",
+    "job_description": "Founder of ManufacturingAI - Creating smart factory automation solutions"
+  },
+  {
+    "name": "Sam Altman",
+    "company": "OpenAI",
+    "email": "fullerton199@gmail.com",
+    "website": "https://openai.com",
+    "job_description": "Founder of OpenAI - Creating smart factory automation solutions"
+  }
+]
