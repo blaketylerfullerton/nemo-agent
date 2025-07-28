@@ -1,6 +1,4 @@
-Here’s a revised version of your write-up that emphasizes the mimicry of Cursor's background agent, the use of **three distinct agents**, and the **NeMo toolkit** foundation:
 
----
 
 # Blake's Hackathon Version of the AIQ Toolkit
 
