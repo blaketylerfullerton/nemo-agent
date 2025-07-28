@@ -17,35 +17,31 @@ general:
   use_uvloop: true
 
 functions:
-  internet_search:
-    _type: tavily_internet_search
-  cto_agent:
-    _type: cto_agent
-    cto_name: John Doe
-  cmo_agent:
-    _type: cmo_agent
-    cmo_name: Jane Smith
-  ceo_agent:
-    _type: ceo_agent
-    ceo_name: John Doe
-    llm_name: meta/llama-3.1-405b-instruct
+  github_agent:
+    _type: github_agent
+    temp_dir: "/tmp/code_editor_repos/"
+    repo_owner: "NVIDIA"
+    repo_name: "Nemo-Agent-Toolkit"
+    base_branch: "main"
+  code_analysis_agent:
+    _type: code_analysis_agent
+    llm: "nim_llm"
+    max_files_to_analyze: 20
+  file_modification_agent:
+    _type: file_modification_agent
+    llm: "nim_llm"
+    temp_dir: "/tmp/code_editor_repos/"
+
 llms:
   nim_llm:
     _type: nim
-    model_name: meta/llama-3.1-405b-instruct
+    model_name: meta/llama-3.3-70b-instruct
     temperature: 0.0
 
-embedders:
-  nim_embedder:
-    _type: nim
-    model_name: nvidia/nv-embedqa-e5-v5
-    truncate: END
-
 workflow:
-  _type: multi_frameworks
-  llm: nim_llm
-  cto_agent: cto_agent
-  cmo_agent: cmo_agent
-  ceo_agent: ceo_agent
-  verbose: true
-  max_retries: 3
+  _type: code_editor_workflow
+  llm: "nim_llm"
+  project_temp_dir: "/tmp/code_editor_sessions/"
+  github_agent: "github_agent"
+  code_analysis_agent: "code_analysis_agent"
+  file_modification_agent: "file_modification_agent"

@@ -19,16 +19,17 @@ general:
 functions:
   internet_search:
     _type: tavily_internet_search
-  cto_agent:
-    _type: cto_agent
-    cto_name: John Doe
-  cmo_agent:
-    _type: cmo_agent
-    cmo_name: Jane Smith
-  ceo_agent:
-    _type: ceo_agent
-    ceo_name: John Doe
-    llm_name: meta/llama-3.1-405b-instruct
+  github_agent:
+    _type: github_agent
+    repo_owner: blaketylerfullerton
+    repo_name: NeMo-Agent-Toolkit-UI
+    base_branch: main
+    github_repo: https://github.com/blaketylerfullerton/NeMo-Agent-Toolkit-UI
+    changes: ""
+  nemo_agent:
+    _type: nemo_agent
+    max_similar_files: 7
+    nvidia_api_key: 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
 llms:
   nim_llm:
     _type: nim
@@ -44,8 +45,6 @@ embedders:
 workflow:
   _type: multi_frameworks
   llm: nim_llm
-  cto_agent: cto_agent
-  cmo_agent: cmo_agent
-  ceo_agent: ceo_agent
-  verbose: true
-  max_retries: 3
+  github_agent: github_agent
+  nemo_agent: nemo_agent
+  github_repo: https://github.com/blaketylerfullerton/NeMo-Agent-Toolkit-UI
