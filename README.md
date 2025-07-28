@@ -12,7 +12,7 @@ Think of it as a proof-of-concept for an AI-powered coding assistant that runs i
 Hackathon code is located in:
 
 ```
-NVIDIA-NEMO-Practice/aiqtoolkit/examples/basic/frameworks/background_agents
+examples/basic/frameworks/background_agents
 ```
 
 ---
