@@ -1,9 +1,18 @@
+Here’s a revised version of your write-up that emphasizes the mimicry of Cursor's background agent, the use of **three distinct agents**, and the **NeMo toolkit** foundation:
+
+---
 
 # Blake's Hackathon Version of the AIQ Toolkit
 
-This is Blake’s experimental hackathon version of the AIQ toolkit. While documentation is limited due to time constraints, the core concept is simple: this project is a **lightweight background agent** inspired by tools like Cursor, but built using NVIDIA’s **NeMo Agent Toolkit**.
+This is Blake’s experimental hackathon version of the AIQ toolkit. While documentation is minimal due to time constraints, the project is a **lightweight background coding assistant** inspired by tools like **Cursor’s background agent**, but built using NVIDIA’s **NeMo Agent Toolkit**.
 
-Think of it as a proof-of-concept for an AI-powered coding assistant that runs in the background, parsing intent and helping with code modifications. It’s minimal for now, and may feel **a bit slow or unoptimized**, but it lays the foundation for future development with more robust features and speed improvements.
+It’s designed as a **proof-of-concept** that mimics the way Cursor continuously interprets and reacts to code changes in the background. However, instead of a single monolithic agent, this version uses **three modular agents** that work together:
+
+- 🔍 **Intent Parsing Agent** – understands what the user wants.
+- 🛠 **File Planning Agent** – determines which parts of the code to modify.
+- 🧠 **Code Modification Agent** – generates the actual code updates.
+
+It’s early-stage and may feel **a bit slow or rough around the edges**, but the architecture lays the groundwork for a more scalable and intelligent background dev assistant.
 
 ---
 
@@ -26,5 +35,4 @@ examples/basic/frameworks/background_agents
 ---
 
 **Example of first PR**
-https://github.com/blaketylerfullerton/NeMo-Agent-Toolkit-UI/pull/1
-<img width="1085" height="516" alt="Screenshot 2025-07-27 at 6 38 27 PM" src="https://github.com/user-attachments/assets/a1db2a92-cf2a-48b2-b989-28fed85cf4c9" />
+[https://github.com/blaketylerfullerton/NeMo-Agent-Toolkit-UI/pull/1](https://github.com/blaketylerfullerton/NeMo-Agent-Toolkit-UI/pull/1) <img width="1085" height="516" alt="Screenshot 2025-07-27 at 6 38 27 PM" src="https://github.com/user-attachments/assets/a1db2a92-cf2a-48b2-b989-28fed85cf4c9" />
